@@ -1,7 +1,6 @@
 import './globals.css';
 import { Montserrat, Poppins } from 'next/font/google';
 import WhatsAppButton from '@/components/WhatsAppButton';
-import Script from 'next/script';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -30,18 +29,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${montserrat.variable} ${poppins.variable}`}>
       <body className="font-body bg-black-main text-white-clean antialiased">
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-Z8KL3DCSWK"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-Z8KL3DCSWK');
-          `}
-        </Script>
         {children}
         <WhatsAppButton />
       </body>
