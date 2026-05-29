@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NMAS Access Solutions
+
+Professional access control, biometric systems, turnstiles, boom gates, and comprehensive security solutions across South Africa.
+
+## Tech Stack
+
+- **Next.js 16** (App Router)
+- **Tailwind CSS v4**
+- **React 19**
+- **Nodemailer** (contact form emails)
+- **Heroicons** (icons)
 
 ## Getting Started
 
-First, run the development server:
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Configure environment variables
+
+Create a `.env.local` file in the project root:
+
+```env
+SMTP_HOST=smtp.example.com
+SMTP_PORT=587
+SMTP_USER=your-email@example.com
+SMTP_PASS=your-password
+```
+
+### 3. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── app/
+│   ├── api/contact/route.js   # Contact form API endpoint
+│   ├── globals.css             # Tailwind + custom styles
+│   ├── layout.js               # Root layout with metadata
+│   └── page.js                 # Homepage
+├── components/
+│   ├── Navbar.jsx              # Fixed navigation bar
+│   ├── Hero.jsx                # Hero section
+│   ├── Services.jsx            # 8 service cards
+│   ├── About.jsx               # About + Why Choose Us
+│   ├── Contact.jsx             # Contact info + form
+│   ├── Footer.jsx              # Site footer
+│   └── WhatsAppButton.jsx      # Floating WhatsApp CTA
+├── .env.local                  # SMTP credentials (not committed)
+├── next.config.mjs             # Next.js configuration
+├── postcss.config.mjs          # PostCSS + Tailwind
+└── package.json
+```
 
-## Learn More
+## Brand Colors
 
-To learn more about Next.js, take a look at the following resources:
+| Role                     | Hex       |
+|--------------------------|-----------|
+| Premium Gold (primary)   | `#D4AF37` |
+| Deep Gold Shadow (hover) | `#9C7A1C` |
+| Matte Black (main bg)    | `#121212` |
+| Charcoal Black (card bg) | `#1E1E1E` |
+| Clean White (headings)   | `#F5F5F5` |
+| Metallic Grey (body text)| `#8A8F98` |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Private – NMAS Access Solutions © 2024
