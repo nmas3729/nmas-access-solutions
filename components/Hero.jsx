@@ -35,9 +35,9 @@ export default function Hero() {
               <div className="flex items-center justify-center mb-4">
                 <ShieldCheckIcon className="h-14 w-14 text-gold-primary" />
               </div>
-              <h3 className="font-heading text-xl md:text-2xl font-semibold text-white-clean mb-3">
+              <h2 className="font-heading text-xl md:text-2xl font-semibold text-white-clean mb-3">
                 24/7 Professional Support
-              </h3>
+              </h2>
               <p className="text-grey-metal mb-6">Emergency service available</p>
               <a
                 href="https://wa.me/27674877278"

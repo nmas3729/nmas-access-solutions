@@ -4,16 +4,16 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold mb-1 font-heading">
+            <h2 className="text-xl font-bold mb-1 font-heading">
               <span className="text-gold-primary">NMAS</span>
               <span className="text-white-clean"> Access Solutions</span>
-            </h3>
+            </h2>
             <p className="text-[0.65rem] tracking-wide text-grey-metal mb-3 uppercase font-semibold">A Division of NMAS Innovations</p>
             <p className="text-grey-metal text-sm">Secure, Smart, Seamless Access Control Systems</p>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4 text-gold-primary font-heading">Quick Links</h4>
+            <h3 className="font-semibold mb-4 text-gold-primary font-heading">Quick Links</h3>
             <ul className="space-y-2 text-grey-metal text-sm">
               <li><a href="#services" className="hover:text-gold-primary transition">Services</a></li>
               <li><a href="#about" className="hover:text-gold-primary transition">About Us</a></li>
@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4 text-gold-primary font-heading">Contact Info</h4>
+            <h3 className="font-semibold mb-4 text-gold-primary font-heading">Contact Info</h3>
             <ul className="space-y-2 text-grey-metal text-sm">
               <li>📧 <a href="mailto:access@nmas.co.za" className="hover:text-gold-primary">access@nmas.co.za</a></li>
               <li>💬 <a href="https://wa.me/27674877278" className="hover:text-gold-primary">+27 67 487 7278</a></li>
@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4 text-gold-primary font-heading">Business Hours</h4>
+            <h3 className="font-semibold mb-4 text-gold-primary font-heading">Business Hours</h3>
             <ul className="space-y-2 text-grey-metal text-sm">
               <li>Mon-Fri: 8:00 - 17:00</li>
               <li>Sat: 9:00 - 13:00</li>
